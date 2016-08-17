@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="智能社 - zhinengshe.com" />
+<meta name="copyright" content="智能社 - zhinengshe.com" />
+<meta name="description" content="智能社是一家专注于web前端开发技术的公司，目前主要提供JavaScript培训和HTML5培训两项服务，同时还推出了大量javascript基础知识教程，智能课堂为你带来全新的学习方法和快乐的学习体验。" />
+<title>智能社— http://www.zhinengshe.com</title>
+<style>
+*{margin:0; padding:0; list-style:none;}
+body{background:#000;}
+span{float:left; font-size:50px; font-weight:bold; font-family:微软雅黑; color:#fff; opacity:0; filter:alpha(opacity:0);}
+</style>
+<script src="move6.js"></script>
+<script>
+window.onload=function(){
+	var str = '灾害发生后，党中央、国务院高度重视。正在乌兹别克斯坦访问并出席上海合作组织峰会的中共中央总书记、国家主席、中央军委主席习近平立即作出重要指 示，要求国务院派工作组前往指导抢险救灾，代表党中央、国务院慰问受灾群众。要求全力组织抢救受伤人员，最大限度减少人员伤亡，并做好遇难人员善后和受灾 群众安置工作。要求有关地方和部门强化气象监测预报和地质灾害评估等工作。做好重特大自然灾害防范和处置工作，切实保障人民群众生命财产安全。';
+	for(var i=0;i<str.length;i++){
+		var oS = document.createElement('span');
+		oS.innerHTML = str.charAt(i);
+		document.body.appendChild(oS);
+	}
+	var aS = document.getElementsByTagName('span');
+	var iNow = 0;
+	var timer = setInterval(function(){
+		startMove(aS[iNow],{opacity:1});
+		iNow++;
+		if(iNow==aS.length){
+			clearInterval(timer);
+		}
+	},100);
+};
+</script>
+</head>
+
+<body>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
